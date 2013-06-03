@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Basic layout elements */
+	body 									{ font-family: Arial, Helvetica, sans-serif; color: #666; font-size:11px; margin: 0; padding: 0; }
+	a 										{ outline: none; }
+	#Content								{ width: 970px; padding: 20px; margin: auto; }
+	/* Search Panel - Hotel Selection - Scrolling Destinations - Skyscraper advert */
+	#Content #Row1 							{ width:auto; height:600px; marging-bottom: 20px; }
+	#Content #Row1 #SearchBrowsePanel		{ width:350px; height:340px; float:left;  }
+	#Content #Row1 #hoteloffersbox			{ width:420px; height:340px; float:left; margin: 0 19px; }
+	#Content #Row1 #Ad_sky					{ width:160px; height:600px; float:right; }
+	#Content #Row1 #desttabswrapper			{ width:791px; height:240px; float: left; border: 1px solid #E4E4E4; margin-top: 16px; }
+	/* Collapsable horizontal advert */
+	#Content #Row2 							{ width:auto; height:auto; margin-top: 20px;}
+	/* Category Widget */
+	#Content #Row3 							{ width: auto; height: 280px; margin: 20px 0 20px 0; }
+	#Content #Row3 #marketingtype-wrapper	{ float: left; width: 970px; height: 276px; }
+	/* Bottom advert - Tabbed Offers */
+	#Content #Row4  						{ width:auto; height:250px; margin-top: 20px;}
+	#Content #Row4 #Ad_bottom				{ width:300px; height:250px; float: left; margin-right: 23px; }
+	#Content #Row4 #tabbedoffersbox			{ height:250px; float:left; width:645px; border: 1px solid #E4E4E4; background-color: #FFF; }
+	
+/* Header */
+	#Header					{ height: 130px; width: 100%; display: block; margin-bottom: 40px; background-image:url(../images/shared/header_bg.png); background-repeat: repeat-x; background-position: top; }
+	#Header .Logo			{ margin-left: 15%; float: left; padding: 0 40px 0 0; }
+	#Header .Nav1			{ float: left; background-image:url(../images/shared/header_bg_Nav1.png); background-repeat: no-repeat; width:183px; height: 130px; padding-top: 25px; }
+	#Header .Nav1 li		{ padding: 5px 0; list-style-image:url(../images/shared/header_list.gif); }
+	#Header .Nav1 a			{ font-size: 16px; color: #999; text-decoration: none; }
+	#Header .Nav1 a:hover	{ color: #666; }
+	#Header .Nav2 li		{ float: left; list-style-type:none; text-align: center; padding: 30px 60px; background-image:url(../images/shared/header_divider.png); background-repeat: no-repeat; background-position: right; }
+	#Header .Nav2 a			{ font-size:20px; color:#007AC5; text-decoration:none; }
+	#Header .Nav2 a:hover	{ color:#00649F; }
+	#Header .Nav2 .Text		{ font-size:35px; }
+	
+/* Footer */
+	#Footer								{ height:160px; width: 100%; display:block; margin-top: 40px; background-image:url(../images/shared/footer/footer_bg.png); background-repeat: repeat-x; background-position:bottom; }
+	#Footer .Nav1						{ float:left; margin-left: 20%; margin-top: 8px; }
+	#Footer .Nav1 li					{ padding: 5px 0; text-align:right; list-style-type:none; }
+	#Footer .Nav1 a						{ color: #999; font-size:16px; text-decoration:none; }
+	#Footer .Nav1 a:hover				{ color: #666; }
+	#Footer .Nav2						{ float:left; padding-left: 40px; margin-left: 40px; background-image:url(../images/shared/footer/footer_divider.png); background-repeat:no-repeat; background-position: left; height: 160px;}
+	#Footer .Nav2 .Logo					{ padding-top: 35px; }
+	#Footer .Nav2 .Copyright			{ margin-top: 15px; }
+	#Footer .Nav2 .Copyright a			{ color:#007AC5; }
+	#Footer .Nav2 .Copyright a:hover	{ color:#00649F; }
+	#Footer .Nav3						{ float:right; margin-right: 20%; padding-top: 35px; }
+	
+	
+/* Search Panel */
+	#SearchBrowsePanel						{ width:350px; height:340px; float:left; border: 1px solid #ccc; }
+	#SearchPanel							{ width:350px; height:200px; background-image:url(../images/searchpanel/searchpanel_bg.png); background-repeat:no-repeat; padding-top: 50px; }
+	#SearchPanel .SelectRow					{ background-color: #f7f8f7; border-bottom:1px solid #FFF; border-top:1px solid #FFF; text-align: left; line-height: 30px; padding-left:10px; font-size: 13px;}
+	#Search 								{ width:90%; margin: auto; }
+	#Search .content 						{ padding: 10px 0; }
+	#Search .content .row		 			{ height: 25px; vertical-align:bottom;}
+	#Search form 							{ margin:0; padding:0; display:inline; }
+	#Search input, select, textarea 		{ font-size:11px; color: #333; }
+	#Search #div_Outward_Date_Month select	{ width: 50px;}
+	#Search #div_Outward_Date select		{ width: 50px;}
+	#Search #div_Return_Date select			{ width: 50px;}
+	#Search button, textarea, select 		{ display: inline; width: 90%; vertical-align: middle; margin: 0 5px 0 0; }
+	#BrowseProperty							{ width:350px; height:89px; background-color: #EBEBEB; border-top: 1px solid #ccc; background-image:url(../images/searchpanel/browseproperty_bg.png); background-repeat:no-repeat; background-position:top left;}
+	#BrowseProperty .content				{ width:90%; margin:auto; margin-top: 45px; }
+	#BrowseProperty select					{ width:90px; }
+		
+
+	
+/* Hotel Offers - Hotel Selection Widget */
+	#hoteloffersbox 					{ width:420px; height:340px; float:left; margin: 0 19px; }
+	#hotelrow 							{ float:left; }
+	#hotelrow2 							{ float:left; }
+	#hotel-wrapper 						{ width:200px; float:left; height:119px; }
+	#hotel-wrapper2 					{ width:200px; float:left; height:119px; padding-left: 20px; }
+	#hotel-box 							{ width:200px; height:auto; float:left;	}
+	ul.tabs4 							{ list-style:none; margin:0 !important; padding:0; height:10px; float:left; }
+	ul.tabs4 li 						{ display:block; font-size:14px; font-weight:bold; height:10px; width: 150px; text-align:left; text-decoration:none; color:#666666; padding:0px; margin:0px; position:relative; top:1px; outline: none; }
+	ul.tabs4 a:active 					{ outline: none; }
+	#hotelinfo 							{ float:left; }
+	.hotelthumb 						{ padding:2px; width: 80px; height: 70px; }
+	#hotel-box  #hoteltext a 			{ color:#007AC5; text-decoration:underline; }
+	#hotel-box  #hoteltext a:hover		{ color:#00649F; }
+	#hotel-box #hoteltext .hotelprice 	{ font-weight:bold; }
+
+
+/* Destination Scrolling Widget */		
+	#desttabswrapper 									{ width:791px; height:240px; float: left; border: 1px solid #E4E4E4; margin-top: 16px; }
+	#desttabscontent 									{ float:left; }
+	#desttabswrapper #destpane .panes .div1 			{ display:none; }
+	#desttabswrapper #destpane 							{ width:789px; height:190px; float: left; position:relative; z-index:1; background: url(../images/destinations/worldmap.png) no-repeat right; }
+	#desttabswrapper #destcontent 						{ margin:20px 10px 10px;}
+	/* Column list styling */
+	#desttabswrapper #destcontent ul.col 				{ float: left; width: 700px; margin: 20px 0; padding: 0; list-style: none; }
+	#desttabswrapper #destcontent li.col 				{ float: left; width: 230px; padding: 0 0 10px; text-indent: 14px; }
+	#desttabswrapper #destcontent li.col a 				{ color:#007AC5; }
+	#desttabswrapper #destcontent li.col a:hover		{ color:#00649F; }
+	#desttabswrapper #destcontent li.col a .hotelprice 	{ font-weight:bold; }
+	.items div 								{ float:left;width:677px; }
+	/* Tabs styling for Resort and Destination Tabs Widget */
+	ul.tabs6 			{ list-style:none; margin:0 !important; padding:0; }
+	ul.tabs6 li 		{ float:left; margin:0; padding:0; background: url(../images/shared/tab_bg.png); background-repeat:repeat-x; }
+	ul.tabs6 li .TAB	{ padding-top: 15px; }
+	ul.tabs6 li .TAB2	{ padding-top: 8px; }
+	ul.tabs6 a 			{ display: inline-block; vertical-align: middle; line-height: normal; font-size:14px; background-image:url(../images/shared/tab_divider.png); background-repeat: no-repeat; background-position: left; height:50px; width: 113px; text-align:center; text-decoration:none; padding:0px; margin:0px; position:relative; top:0; outline: none; color: #666; }
+	ul.tabs6 a:active 	{ outline:none; color: #666; }
+	/* when mouse enters the tab move the background image */
+	ul.tabs6 a:hover 	{ background-image:url(../images/shared/tab_bg_selected.png); background-repeat:repeat-x; outline:none; color: #666; }
+	/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+	ul.tabs6 a.current, ul.tabs6 a.current:hover, ul.tabs6 li.current a { background-image:url(../images/shared/tab_bg_selected.png); background-repeat:repeat-x; cursor:default !important; outline:none; color: #666; }
+	/* End Tabs styling for Resort and Destination Tabs Widget */
+	.scrollable 		{/* required settings */position:relative; overflow:hidden; width: 677px; height:225px; }
+	.resortscrollable 	{/* required settings */position:relative; overflow:hidden; width: 657px; height:255px; }
+	/* root element for scrollable items. Must be absolutely positioned and it should have a extremely large width to accomodate scrollable items. it's enough that you set the width and height for the root element and not for this element.*/
+	.scrollable .items {/* this cannot be too large */width:20000em ;position:absolute; clear:both;}
+	.resortscrollable .items {/* this cannot be too large */width:20000em; position:absolute; clear:both;}
+
+
+/* Tabbed Offers Widget */
+	#tabbedoffersbox 	{ height:250px; float:left; width:645px; border: 1px solid #E4E4E4; background-color: #FFF; }
+	#tabscontent 		{ float:left; }
+	ul.tabs 			{ list-style:none; margin:0 !important; padding:0; height:50px; }
+	ul.tabs li 			{ float:left; padding:0; background: url(../images/shared/tab_bg.png); background-repeat:repeat-x; }
+	ul.tabs a 			{ display:block; background-image:url(../images/shared/tab_divider.png); background-repeat: no-repeat; background-position: left; font-size:14px; display:block; height:50px; line-height:50px; width:215px; text-align:center; text-decoration:none; color:#666; padding:0px; margin:0px; position:relative; top:0; outline: none;}
+	ul.tabs a:active 	{ outline: none; }
+	/* when mouse enters the tab move the background image */
+	ul.tabs a:hover 	{ background-image:url(../images/destinations/tab_bg_selected.png); background-repeat:repeat-x; outline:none; color: #666; }
+	/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+	ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a { background-image:url(../images/shared/tab_bg_selected.png); background-repeat:repeat-x; cursor:default !important; outline:none; color: #666; }
+	#tabbedoffersbox #content 									{ width:645px; float: left; height: auto; margin: 7px 0 0 7px; }
+	#tabbedoffersbox #content #contentrow 						{ float:left; width:645px; }
+	#tabbedoffersbox #content #contentoffers 					{ width:310px; height:auto; margin: 5px; float: left; }
+	#tabbedoffersbox #content #contentoffers #thumb 			{ width:100px; height:80px; float:left; padding: 2px;}
+	#tabbedoffersbox #content #contentoffers #textcontainer 	{ width:180px; float:left; margin-left: 10px; }
+	#tabbedoffersbox #content #contentoffers .text01 a 			{ text-decoration:none; line-height: 15px; font-weight:bold; color: #666; font-size: 13px; }
+	#tabbedoffersbox #content #contentoffers .text02 			{ display:inline-block; padding: 0 0 5px 0; }
+	#tabbedoffersbox #content #contentoffers .text03 a 			{ color:#007AC5; text-decoration:underline; }
+	#tabbedoffersbox #content #contentoffers .text03 a:hover	{ color:#00649F; }
+	#tabbedoffersbox #content #contentoffers .text03 .offerprice{ font-weight: bold; }
+	/* tab pane styling */ 
+	.panes > div { display:none; width:470px; }
+	/* initially all panes are hidden */ 
+	.panes .pane { display:none; }
+	
+	
+/* Marketing type selection - Holiday types zoom widget */
+	#marketingtype-wrapper	{ }
+	ul.thumb 				{ float:left; list-style:none; margin:0; padding:0; width: 970px; }
+	ul.thumb li 			{ float:left; padding:0px; width:242px; height:138px; position:relative; }
+	ul.thumb li img 		{ width:242px; height:138px; padding:0px; position:absolute; left:0; top:0; -ms-interpolation-mode:bicubic; }
+	ul.thumb li img.hover 	{ background:url(../images/categories/thumb_bg.png) no-repeat center center; border: none; }

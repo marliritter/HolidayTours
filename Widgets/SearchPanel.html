@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="stylesheet/HT_style.css" rel="stylesheet" type="text/css" />
+<title>Untitled Document</title>
+
+
+</head>
+
+<body>
+		<div id="SearchBrowsePanel">
+        	<div id="SearchPanel">
+             	<form method="post" name="miniSearchForm" action="http://holidays.holidaytours.co.za/sell-it?command=MS&lastPage=%2Fspecific%2Fkulula-ht%2Fhome.jsp&benum=holidaytours">
+            		<!-- Select radio option before continuing - compulsary -->
+                        <div class="SelectRow">
+                            <input type="radio" name="holidaypackages" id="holidaypackages" /><label>Holiday Packages</label>
+                            <input type="radio" name="hotelsonly" id="hotelsonly" /><label>Hotel Only</label>
+                        </div>
+                    <!-- Fields in this section will change according to radio option selected above -->
+                           <table id="Search" cellpadding="0" cellspacing="0">
+                               <tbody><tr>
+                                <td class="content">
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: auto;">
+                                   <tr class="row">
+                                    <td width="50%" align="left">Holiday Type&nbsp;</td>
+                                     <td>
+                                       <div id="div_Package_Marketing_Type">
+                                         <select name="Package_Marketing_Type" id="Package_Marketing_Type" onchange="onChangeMiniSearchKulula( 'Package_Marketing_Type' );">
+                                             <option value="-1">Any</option>
+                                             <option  value="Bush">Bush</option>
+                                             <option  value="Beach">Beach</option>
+                                             <option  value="Cruising">Cruising</option>
+                                             <option  value="Events">Events</option>
+                                             <option  value="Family">Family</option>
+                                             <option  value="Honeymoons">Honeymoons</option>
+                                             <option  value="Specials">Specials</option>
+                                             <option  value="Self-catering">Self-catering</option>
+                                         </select>
+                                       </div>
+                                     </td>
+                                   </tr>
+                                   <tr class="row">
+                                    <td align="left">Departing from:</td>
+                                     <td align="left">Departure date:</td>
+                                   </tr>
+                                   <tr class="row">
+                                     <td  align="left">
+                                       <div>
+                                         <select name="Origin" onchange>
+                                           <option value="-1">Any</option>
+                                         </select>
+                                       </div>
+                                     </td>
+                                     <td colspan="2"  align="left">
+                                       <div id="div_Outward_Date_Month" style="float:left"><select name="Outward_Date_Month" id="Outward_Date_Month"><option value="-1">...</option></select></div>
+                                       <div id="div_Outward_Date" style="float:left"><select name="Outward_Date" id="Outward_Date"><option value="-1">...</option></select></div>
+                                             <input id="pk-out-calendar" type="hidden"/>
+                                             <input id="pk-out-calendar" type="hidden"/>
+                                     </td>
+                                   </tr>
+                                   <tr class="row">
+                                       <td align="left">Going to:</td>
+                                     <td align="left">Return date: </td>
+                                   </tr>
+                                   <tr>
+                                       <td  align="left">
+                                         <span>
+                                         <div>
+                                               <select name="Search_Destination" >
+                                                 <option value="-1">Any</option>
+                                               </select>
+                                         </div>
+                                         </span>
+                                       </td>
+                                       <td colspan="2" align="left">
+                                         <input type="hidden" name="Outward_Month" value="-1"/>
+                                         <input type="hidden" name="Outward_Day" value="-1"/>
+                                         <input type="hidden" name="Return_Month" value="-1"/>
+                                         <input type="hidden" name="Return_Day" value="-1"/>
+                                         <input type="hidden" name="Duration" value="-1">
+                                         <input type="hidden" name="Outward Window" value="0">
+                                         <div id="div_Return_Date" style="float:left">
+                                         <select id="Return_Date" name="Return_Date">
+                                           <option value="-1">...</option>
+                                         </select>
+                                         </div>
+                                         <input id="pk-return-calendar" type="hidden"/>
+                                     </td>
+                                    </tr>
+                                <tr class="row">
+                                      <td colspan="2" align="right" valign="bottom"><input type="image" name="miniSearch" src="images/buttons/button_search.png"  alt="Search" border="0" style="margin-right:10px;"></td>
+                                    </tr>
+                                  </table>
+                                
+                              </tr>
+                            </table>
+                   </form>
+            </div>
+            
+        <!-- Browse hotel hierarchy - separate of the above search -->
+            <div id="BrowseProperty">
+            	<form>
+                        <table border="0" cellspacing="0" cellpadding="0" class="content">
+                              <tr>
+                                <td>Country:</td>
+                                <td>City:</td>
+                                <td>Hotel:</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <select name="BrowseCountry">
+                                         <option value="-1">Any</option>
+                                         <option  value="country">country name</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="BrowseCity">
+                                         <option value="-1">Any</option>
+                                         <option  value="city">city name</option>
+                                     </select>
+                                </td>
+                                <td>
+                                    <select name="BrowseHotel">
+                                         <option value="-1">Any</option>
+                                         <option  value="hotel">hotel name</option>
+                                     </select>
+                                </td>
+                              </tr>
+                          </table>
+                     </form>
+            </div>
+        
+        </div>
+
+
+
+</body>
+</html>

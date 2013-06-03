@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="stylesheet/HT_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="stylesheet/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+
+<script language="JavaScript" src="js/jquery.js" type="text/javascript"></script>
+<script language="JavaScript" src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" src="js/imagezoom.js" type="text/javascript"></script>
+
+
+<title>Holiday Tours</title>
+</head>
+
+<body>
+	<!-- START Header -->
+    	<div id="Header">
+                <div class="Logo"><a href="#"><img src="images/shared/HT_logo.png" border="0" /></a></div>
+                <div class="Nav1">
+                    <ul>
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">Enquiries</a></li>
+                    </ul>
+                </div>
+                <div class="Nav2">
+                        <li><a href="#">Discover all our <br /><span class="Text">Destinations</span></a></li>
+                        <li><a href="#">Browse all our <br /><span class="Text">Holiday Categories</span></a></li>
+                </div>    
+        </div>
+    <!-- END Header -->
+    
+        <div id="Content">
+            <!-- Search Panel - Hotel Selection - Scrolling Destinations - Skyscraper advert -->
+            <div id="Row1">
+            		
+                   
+                    		<div id="SearchBrowsePanel">
+        	<div id="SearchPanel">
+             	<form method="post" name="miniSearchForm" action="http://holidays.holidaytours.co.za/sell-it?command=MS&lastPage=%2Fspecific%2Fkulula-ht%2Fhome.jsp&benum=holidaytours">
+            		<!-- Select radio option before continuing - compulsary -->
+                        <div class="SelectRow">
+                            <input type="radio" name="holidaypackages" id="holidaypackages" /><label>Holiday Packages</label>
+                            <input type="radio" name="hotelsonly" id="hotelsonly" /><label>Hotel Only</label>
+                        </div>
+                    <!-- Fields in this section will change according to radio option selected above -->
+                           <table id="Search" cellpadding="0" cellspacing="0">
+                               <tbody><tr>
+                                <td class="content">
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: auto;">
+                                   <tr class="row">
+                                    <td width="50%" align="left">Holiday Type&nbsp;</td>
+                                     <td>
+                                       <div id="div_Package_Marketing_Type">
+                                         <select name="Package_Marketing_Type" id="Package_Marketing_Type" onchange="onChangeMiniSearchKulula( 'Package_Marketing_Type' );">
+                                             <option value="-1">Any</option>
+                                             <option  value="Bush">Bush</option>
+                                             <option  value="Beach">Beach</option>
+                                             <option  value="Cruising">Cruising</option>
+                                             <option  value="Events">Events</option>
+                                             <option  value="Family">Family</option>
+                                             <option  value="Honeymoons">Honeymoons</option>
+                                             <option  value="Specials">Specials</option>
+                                             <option  value="Self-catering">Self-catering</option>
+                                         </select>
+                                       </div>
+                                     </td>
+                                   </tr>
+                                   <tr class="row">
+                                    <td align="left">Departing from:</td>
+                                     <td align="left">Departure date:</td>
+                                   </tr>
+                                   <tr class="row">
+                                     <td  align="left">
+                                       <div>
+                                         <select name="Origin" onchange>
+                                           <option value="-1">Any</option>
+                                         </select>
+                                       </div>
+                                     </td>
+                                     <td colspan="2"  align="left">
+                                       <div id="div_Outward_Date_Month" style="float:left"><select name="Outward_Date_Month" id="Outward_Date_Month"><option value="-1">...</option></select></div>
+                                       <div id="div_Outward_Date" style="float:left"><select name="Outward_Date" id="Outward_Date"><option value="-1">...</option></select></div>
+                                             <input id="pk-out-calendar" type="hidden"/>
+                                             <input id="pk-out-calendar" type="hidden"/>
+                                     </td>
+                                   </tr>
+                                   <tr class="row">
+                                       <td align="left">Going to:</td>
+                                     <td align="left">Return date: </td>
+                                   </tr>
+                                   <tr>
+                                       <td  align="left">
+                                         <span>
+                                         <div>
+                                               <select name="Search_Destination" >
+                                                 <option value="-1">Any</option>
+                                               </select>
+                                         </div>
+                                         </span>
+                                       </td>
+                                       <td colspan="2" align="left">
+                                         <input type="hidden" name="Outward_Month" value="-1"/>
+                                         <input type="hidden" name="Outward_Day" value="-1"/>
+                                         <input type="hidden" name="Return_Month" value="-1"/>
+                                         <input type="hidden" name="Return_Day" value="-1"/>
+                                         <input type="hidden" name="Duration" value="-1">
+                                         <input type="hidden" name="Outward Window" value="0">
+                                         <div id="div_Return_Date" style="float:left">
+                                         <select id="Return_Date" name="Return_Date">
+                                           <option value="-1">...</option>
+                                         </select>
+                                         </div>
+                                         <input id="pk-return-calendar" type="hidden"/>
+                                     </td>
+                                    </tr>
+                                <tr class="row">
+                                      <td colspan="2" align="right" valign="bottom"><input type="image" name="miniSearch" src="images/buttons/button_search.png"  alt="Search" border="0" style="margin-right:10px;"></td>
+                                    </tr>
+                                  </table>
+                                
+                              </tr>
+                            </table>
+                   </form>
+            </div>
+            
+        <!-- Browse hotel hierarchy - separate of the above search -->
+            <div id="BrowseProperty">
+            	<form>
+                        <table border="0" cellspacing="0" cellpadding="0" class="content">
+                              <tr>
+                                <td>Country:</td>
+                                <td>City:</td>
+                                <td>Hotel:</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <select name="BrowseCountry">
+                                         <option value="-1">Any</option>
+                                         <option  value="country">country name</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="BrowseCity">
+                                         <option value="-1">Any</option>
+                                         <option  value="city">city name</option>
+                                     </select>
+                                </td>
+                                <td>
+                                    <select name="BrowseHotel">
+                                         <option value="-1">Any</option>
+                                         <option  value="hotel">hotel name</option>
+                                     </select>
+                                </td>
+                              </tr>
+                          </table>
+                     </form>
+            </div>
+        
+        </div>
+                    
+                    
+                    
+                <!-- START Hotel Selection Widget -->
+                		<div id="hoteloffersbox">
+                              <div id="hotelrow">
+                                <div id="hotel-wrapper">
+                                  <ul class="tabs4">
+                                    <li>Europe</li>
+                                  </ul>
+                                  <div id="hotel-box">
+                                    <table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="4" align="left"><img src="images/hotelselection/hotelselection01.png" alt="Top Hotels" width="80" height="70" class="hotelthumb" /></td>
+                                        <td width="132" align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R22 568</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R15 689</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">4* offers from <span class="hotelprice">R44 896</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">5* offers from <span class="hotelprice">R26 987</span></a></div></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div id="hotel-wrapper2">
+                                  <ul class="tabs4">
+                                    <li>Africa & UAE</li>
+                                  </ul>
+                                  <div id="hotel-box">
+                                    <table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="4" align="center"><img src="images/hotelselection/hotelselection02.png" alt="Top Hotels" width="80" height="70" class="hotelthumb" /></td>
+                                        <td width="132" align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R22 568</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R25 689</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">4* offers from <span class="hotelprice">R42 896</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">5* offers from <span class="hotelprice">R62 987</span></a></div></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hotelrow2">
+                                <div id="hotel-wrapper">
+                                  <ul class="tabs4">
+                                    <li>Cape Town</li>
+                                  </ul>
+                                  <div id="hotel-box">
+                                    <table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="4" align="center"><img src="images/hotelselection/hotelselection03.png" alt="Top Hotels" width="80" height="70" class="hotelthumb" /></td>
+                                        <td width="132" align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R22 568</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R25 689</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">4* offers from <span class="hotelprice">R24 896</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">5* offers from <span class="hotelprice">R26 987</span></a></div></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div id="hotel-wrapper2">
+                                  <ul class="tabs4">
+                                    <li>Indian Ocean Islands</li>
+                                  </ul>
+                                  <div id="hotel-box">
+                                    <table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="4" align="center"><img src="images/hotelselection/hotelselection04.png" alt="Top Hotels" width="80" height="70" class="hotelthumb" /></td>
+                                        <td width="132" align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R22 568</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R52 689</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">4* offers from <span class="hotelprice">R42 896</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">5* offers from <span class="hotelprice">R62 987</span></a></div></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                               <div id="hotelrow2">
+                                <div id="hotel-wrapper">
+                                  <ul class="tabs4">
+                                    <li>Garden Route</li>
+                                  </ul>
+                                  <div id="hotel-box">
+                                    <table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="4" align="center"><img src="images/hotelselection/hotelselection05.png" alt="Top Hotels" width="80" height="70" class="hotelthumb" /></td>
+                                       <td width="132" align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R22 568</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R52 689</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">4* offers from <span class="hotelprice">R42 896</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">5* offers from <span class="hotelprice">R62 987</span></a></div></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div id="hotel-wrapper2">
+                                  <ul class="tabs4">
+                                    <li>Thailand</li>
+                                  </ul>
+                                  <div id="hotel-box">
+                                    <table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td rowspan="4" align="center"><img src="images/hotelselection/hotelselection06.png" alt="Top Hotels" width="80" height="70" class="hotelthumb" /></td>
+                                       <td width="132" align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R22 568</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">3* offers from <span class="hotelprice">R52 689</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">4* offers from <span class="hotelprice">R44 896</span></a></div></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right"><div id="hoteltext"><a href="#">5* offers from <span class="hotelprice">R62 987</span></a></div></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                <!-- END of Hotel Selection Widget -->
+
+                <div id="Ad_sky"><img src="images/160x600-3.jpg" /></div>
+                
+                <!-- START Scolling Destinations Widget -->
+                    
+                    <div id="desttabswrapper">
+                      <ul class="tabs6" id="#desttabscontent">
+                        <li><a href="#"><div class="TAB">South Afrcia</div></a></li>
+                        <li><a href="#"><div class="TAB2">Indian Ocean Islands</div></a></li>
+                        <li><a href="#"><div class="TAB">Far East</div></a></li>
+                        <li><a href="#"><div class="TAB">Africa & UAE</div></a></li>
+                        <li><a href="#"><div class="TAB">UK & Ireland</div></a></li>
+                        <li><a href="#"><div class="TAB">Europe</div></a></li>
+                        <li><a href="#"><div class="TAB">North America</div></a></li>
+                      </ul>
+                      <div id="destpane" class="panes">
+                        <div class="div1">
+                          <!-- root element for scrollable -->
+                          <div class="scrollable">
+                            <!-- root element for the items -->
+                            <div class="items">
+                              <div>
+                                <!-- Destination List -->
+                                <div id="destcontent">
+                                  <div id="resortlink">
+                                    <ul class="col">
+                                       <li class="col"><a href="javascript:;"  class="next">Botswana <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Cape Town <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Drakensberg <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Durban <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">East London <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Garden Route <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Johannesburg <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Kruger & Surrounds <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Lanseria <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Malaria-free Areas <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Northern Natal <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Port Elizabeth <span class="hotelprice">from R12 154</span></a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Winelands <span class="hotelprice">from R12 154</span></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Resort List -->
+                              <div id="destmap" style="	background-image: url(images/branding/rwa-toolkit/maps/europe.gif); background-repeat: no-repeat;background-position: right;">
+                                <div id="destcontent">
+                                  <div id="resortlink">
+                                    <ul class="col">
+                                      <li class="col"><a href="#">Algarve</a></li>
+                                      <li class="col"><a href="#">Cascais</a></li>
+                                      <li class="col"><a href="#">Estoril</a></li>
+                                      <li class="col"><a href="#">Porto</a></li>
+                                      <li class="col"><a href="resort.html">Lisbon</a></li>
+                                      <li class="col"><a href="#">Madeira</a></li>
+                                    </ul>
+                                  </div>
+                                  <div id="scrolllink"> <a href="javascript:;" class="prev"><img src="images/branding/rwa-toolkit/graphics/blue-left-arrow.gif" alt="blue arrow" border="0" align="absmiddle" /> back to destinations</a> <a href="http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=portugal&amp;sll=53.800651,-4.064941&amp;sspn=17.18313,39.506836&amp;ie=UTF8&amp;hq=&amp;hnear=Portugal&amp;ll=39.402244,-6.108398&amp;spn=5.602165,14.0625&amp;z=7&amp;output=embed?iframe=true&amp;width=100%&amp;height=100%&amp;center=47.5_-122.5" rel="prettyPhoto[iframe]">View Map</a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End root element for scrollable -->
+                        <!-- root element for scrollable -->
+                        <div class="div1">
+                          <div class="scrollable">
+                            <!-- root element for the items -->
+                            <div class="items">
+                              <div>
+                                <!-- Destination List -->
+                                <div id="destcontent">
+                                  <div id="resortlink">
+                                    <ul class="col">
+                                      <li class="col"><a href="javascript:;"  class="next">Durban</a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Johannesburg</a></li>
+                                      <li class="col"><a href="javascript:;"  class="next">Cape Town</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Resort List -->
+                              <div id="destmap" style="	background-image: url(images/branding/rwa-toolkit/maps/africa.gif); background-repeat: no-repeat;background-position: right;">
+                                <div id="destcontent">
+                                  <div id="maplink">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/branding/rwa-toolkit/graphics/orangearrow.jpg" alt="Arrow" border="0" align="absmiddle" />&nbsp;&nbsp;<a href="http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=africa&amp;sll=53.800651,-4.064941&amp;sspn=17.18313,39.506836&amp;ie=UTF8&amp;hq=&amp;hnear=Africa&amp;z=3?iframe=true&amp;width=100%&amp;height=100%" rel="prettyPhoto[iframe]">View Map</a></div>
+                                  <div id="resortlink">
+                                    <ul class="col">
+                                      <li class="col"><a href="#">resort 1</a></li>
+                                      <li class="col"><a href="#">resort 2</a></li>
+                                      <li class="col"><a href="#">resort 3</a></li>
+                                      <li class="col"><a href="#">resort 4</a></li>
+                                      <li class="col"><a href="#">resort 5</a></li>
+                                      <li class="col"><a href="#">resort 6</a></li>
+                                    </ul>
+                                  </div>
+                                  <div id="scrolllink"> <a href="javascript:;" class="prev"><img src="images/branding/rwa-toolkit/graphics/blue-left-arrow.gif" alt="blue arrow" border="0" align="absmiddle" /> back to destinations</a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End root element for scrollable -->
+                      </div>
+                      <!-- End destination pane -->
+                    </div>
+					<script type="text/javascript" language="JavaScript1.2">
+                    // execute your scripts when the DOM is ready. this is mostly a good habit
+                    $(function() {
+                       // initialize scrollable
+                        $(".scrollable").scrollable({
+                        size:1,
+                        clickable:false
+                        });
+                    });
+                    
+                    </script>
+                    <script language="JavaScript" type="text/javascript">
+                    // perform JavaScript after the document is scriptable.
+                    $(function() {
+                        // setup ul.tabs to work as tabs for each div directly under div.panes
+                        $("ul.tabs6").tabs("div.panes > div");
+                            $("ul.tabs3").tabs("div.panes3 > div");
+                    
+                    });
+                    </script>
+                    
+                    
+                    <script type="text/javascript" charset="utf-8">
+                    $(document).ready(function(){
+                        $("a[rel^='prettyPhoto']").prettyPhoto({theme:'facebook'});
+                    });
+                    </script>
+
+
+                <!-- END of Scolling Destinations Widget -->
+                
+            </div>
+            <!-- -->
+            <div id="Row2"><img src="images/970x90.jpg" /></div>
+            <!-- -->
+            <div id="Row3">
+             <!-- START Holiday Categories Widget -->
+					<script language="JavaScript" type="text/javascript">
+                        <!--
+                        var state = 'none';
+                        
+                        function showhide(layer_ref) {
+                        
+                        if (state == 'block') {
+                        state = 'none';
+                        }
+                        else {
+                        state = 'block';
+                        }
+                        if (document.all) { //IS IE 4 or 5 (or 6 beta)
+                        eval( "document.all." + layer_ref + ".style.display = state");
+                        }
+                        if (document.layers) { //IS NETSCAPE 4 or below
+                        document.layers[layer_ref].display = state;
+                        }
+                        if (document.getElementById &&!document.all) {
+                        hza = document.getElementById(layer_ref);
+                        hza.style.display = state;
+                        }
+                        }
+                        //-->
+                    </script>
+   
+                  <div id="marketingtype-wrapper">
+                         <ul class="thumb">
+                            <li onmouseover="showhide('div1')" onmouseout="showhide('div1') ">
+                            <a href="#"><img src="images/categories/category01.png" alt="" border="0" /></a>
+                            </li>
+                            <li onmouseover="showhide('div2')" onmouseout="showhide('div2') ">
+                            <a href="#"><img src="images/categories/category02.png" alt="" border="0"/> </a>
+                            </li>
+                            <li onmouseover="showhide('div3')" onmouseout="showhide('div3') ">
+                            <a href="#"><img src="images/categories/category03.png" alt="" border="0"/></a>
+                            </li>
+                            <li onmouseover="showhide('div4')" onmouseout="showhide('div4') ">
+                            <a href="#"><img src="images/categories/category04.png" alt="" border="0"/></a>
+                            </li>
+                            <li onmouseover="showhide('div5')" onmouseout="showhide('div5') ">
+                            <a href="#"><img src="images/categories/category05.png" alt="" border="0"/></a>
+                            </li>
+                            <li onmouseover="showhide('div6')" onmouseout="showhide('div6') ">
+                            <a href="#"><img src="images/categories/category06.png" alt="" border="0"/></a>
+                            </li>
+                            <li onmouseover="showhide('div7')" onmouseout="showhide('div7') ">
+                            <a href="#"><img src="images/categories/category07.png" alt="" border="0"/></a>
+                            </li>
+                            <li onmouseover="showhide('div8')" onmouseout="showhide('div8') ">
+                            <a href="#"><img src="images/categories/category08.png" alt="" border="0"/></a>
+                            </li>
+                        </ul>
+                   </div>
+			<!--END marketing type gallery selection-->
+        
+            </div>
+            <!-- -->
+            <div id="Row4">
+            	<div id="Ad_bottom"><img src="images/300x250.jpg"/></div>
+                
+                <!-- START -- Tabbed Offers Widget -->
+                    <div id="tabbedoffersbox">
+                          <div id="tabscontent">
+                              <ul class="tabs">
+                               <li><a href="#">Top Offers</a></li>
+                               <li><a href="#">Special Offers</a></li>
+                               <li><a href="#">Cheap Flights</a></li>
+                              </ul>
+                        </div>
+                        <div id="content">
+                         <div class="panes">
+                           <!--1st offer pane-->
+                           <div style="display:block">
+                             <div id="contentrow">
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed01.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Mandela Rhodes Place long hotel name</a></span> <br />
+                                   <span class="text02">Mandela Rhodes Place, located in Cape Town busting city centre</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R15 568</span></a></span>
+                                  </div>
+                              </div>
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed02.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Kwafubesi Tented Safari Camp</a></span>                                     <br />
+                                   <span class="text02">Five intimate tents offer an unforgettable bush experience.</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R11 2569</span></a></span>
+                                  </div>
+                              </div>
+                             </div>
+                              <div id="contentrow">
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed03.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Centara Poste Lafayette Resort & Spa</a></span>                                     <br />
+                                   <span class="text02">Contemporary interpretation of the island’s architectural heritage</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice"> from R13 689</span></a></span>
+                                  </div>
+                              </div>
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed04.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Royal Chundu Zambezi River Lodge</a></span>                                     <br />
+                                   <span class="text02">A sanctum of quiet solitude and untouched beauty</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R10 569</span></a></span>
+                                  </div>
+                              </div>
+                             </div>
+                           </div>
+                
+                          <!--2nd offer pane-->
+                            <div style="display:block">
+                             <div id="contentrow">
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed04.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Royal Chundu Zambezi River Lodge</a></span>                                     <br />
+                                   <span class="text02">A sanctum of quiet solitude and untouched beauty</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R10 569</span></a></span>
+                                  </div>
+                              </div>
+                              <div id="contentoffers">
+                                <div id="thumb"><img src="images/tabbedoffers/tabbed03.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Centara Poste Lafayette Resort & Spa</a></span>                                     <br />
+                                   <span class="text02">Contemporary interpretation of the island’s architectural heritage</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice"> from R13 689</span></a></span>
+                                  </div>
+                              </div>
+                             </div>
+                              <div id="contentrow">
+                              <div id="contentoffers">
+                                 <div id="thumb"><img src="images/tabbedoffers/tabbed02.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Kwafubesi Tented Safari Camp</a></span>                                     <br />
+                                   <span class="text02">Five intimate tents offer an unforgettable bush experience.</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R11 2569</span></a></span>
+                                  </div>
+                              </div>
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed01.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Mandela Rhodes Place long hotel name</a></span> <br />
+                                   <span class="text02">Mandela Rhodes Place, located in Cape Town busting city centre</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R15 568</span></a></span>
+                                  </div>
+                              </div>
+                             </div>
+                           </div>
+                          <!--3rd offer pane-->
+                           <div style="display:block">
+                             <div id="contentrow">
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed02.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Kwafubesi Tented Safari Camp</a></span>                                     <br />
+                                   <span class="text02">Five intimate tents offer an unforgettable bush experience.</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R11 2569</span></a></span>
+                                  </div>
+                              </div>
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed01.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Mandela Rhodes Place long hotel name</a></span> <br />
+                                   <span class="text02">Mandela Rhodes Place, located in Cape Town busting city centre</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R15 568</span></a></span>
+                                  </div>
+                              </div>
+                             </div>
+                              <div id="contentrow">
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed04.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Royal Chundu Zambezi River Lodge</a></span>                                     <br />
+                                   <span class="text02">A sanctum of quiet solitude and untouched beauty</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice">from R10 569</span></a></span>
+                                  </div>
+                              </div>
+                              <div id="contentoffers">
+                                  <div id="thumb"><img src="images/tabbedoffers/tabbed03.png" alt="Disneyland" /></div>
+                                  <div id="textcontainer">
+                                   <span class="text01"><a href="hotel-overview.html#fourth" title="view offer">Centara Poste Lafayette Resort & Spa</a></span>                                     <br />
+                                   <span class="text02">Contemporary interpretation of the island’s architectural heritage</span><br />
+                                   <span class="text03"><a href="#">View offer <span class="offerprice"> from R13 689</span></a></span>
+                                  </div>
+                              </div>
+                             </div>
+                           </div>
+                           </div>
+                          </div>
+                      </div>
+                <script language="JavaScript" type="text/javascript">
+                // perform JavaScript after the document is scriptable.
+                $(function() {
+                    // setup ul.tabs to work as tabs for each div directly under div.panes
+                    $("ul.tabs").tabs("div.panes > div");
+                    $("ul.tabs2").tabs("div.panes2 > div");
+                    $("ul.tabs3").tabs("div.panes3 > div");
+                    $("ul.tabs6").tabs("div.panes > div");
+                });
+                
+                </script>
+                <!-- END -- Tabbed Offers Widget -->
+                
+            </div>  
+        </div> 
+        <!-- START Footer -->     
+            <div id="Footer">
+                    <div class="Nav1">
+                        <ul>
+                            <li><a href="#">Enquiries</a></li>
+                            <li><a href="#">How to pay us</a></li>
+                            <li><a href="#">Manage my booking</a></li>
+                            <li><a href="#">Agents Info</a></li>
+                        </ul>
+                    </div>
+                    <div class="Nav2">
+                        <div class="Logo"><a href="https://www.facebook.com/HolidayTours.co.za"><img src="images/shared/footer/logo_fb.png" border="0"/></a></div>
+                        <div class="Copyright">Copyright © 1998-2013 holidaytours.co.za. All Rights Reserved. <br />Users of this site agree to be bound by the <a href="#">terms and conditions</a> of the website.</div>
+                    </div>
+                    <div class="Nav3">
+                        <div class="Logo"><img src="images/shared/footer/footer_logos.png"/></div>
+                    </div>
+            </div>
+        <!-- END Footer --> 
+</body>
+</html>

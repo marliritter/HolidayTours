@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Widget Toolkit Header</title>
+<script language="JavaScript" src="js/jquery.js" type="text/javascript"></script>
+<script language="JavaScript" src="js/imagezoom.js" type="text/javascript"></script>
+
+<link href="stylesheet/HT_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script language="JavaScript" type="text/javascript">
+<!--
+var state = 'none';
+
+function showhide(layer_ref) {
+
+if (state == 'block') {
+state = 'none';
+}
+else {
+state = 'block';
+}
+if (document.all) { //IS IE 4 or 5 (or 6 beta)
+eval( "document.all." + layer_ref + ".style.display = state");
+}
+if (document.layers) { //IS NETSCAPE 4 or below
+document.layers[layer_ref].display = state;
+}
+if (document.getElementById &&!document.all) {
+hza = document.getElementById(layer_ref);
+hza.style.display = state;
+}
+}
+//-->
+</script><!--marketing type gallery selection-->
+  <div id="marketingtype-wrapper">
+		 <ul class="thumb">
+			<li onmouseover="showhide('div1')" onmouseout="showhide('div1') ">
+			<a href="#"><img src="images/categories/category01.png" alt="" border="0" /></a>
+			</li>
+			<li onmouseover="showhide('div2')" onmouseout="showhide('div2') ">
+			<a href="#"><img src="images/categories/category02.png" alt="" border="0"/> </a>
+			</li>
+			<li onmouseover="showhide('div3')" onmouseout="showhide('div3') ">
+			<a href="#"><img src="images/categories/category03.png" alt="" border="0"/></a>
+			</li>
+			<li onmouseover="showhide('div4')" onmouseout="showhide('div4') ">
+			<a href="#"><img src="images/categories/category04.png" alt="" border="0"/></a>
+			</li>
+			<li onmouseover="showhide('div5')" onmouseout="showhide('div5') ">
+			<a href="#"><img src="images/categories/category05.png" alt="" border="0"/></a>
+			</li>
+			<li onmouseover="showhide('div6')" onmouseout="showhide('div6') ">
+			<a href="#"><img src="images/categories/category06.png" alt="" border="0"/></a>
+			</li>
+			<li onmouseover="showhide('div7')" onmouseout="showhide('div7') ">
+			<a href="#"><img src="images/categories/category07.png" alt="" border="0"/></a>
+			</li>
+			<li onmouseover="showhide('div8')" onmouseout="showhide('div8') ">
+			<a href="#"><img src="images/categories/category08.png" alt="" border="0"/></a>
+			</li>
+		</ul>
+		</div>
+		<!--End marketing type gallery selection--></body>
+</html>
