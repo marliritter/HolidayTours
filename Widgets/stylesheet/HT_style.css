@@ -27,9 +27,9 @@
 	
 /* Header */
 	#Header							{ height: 130px; width: 100%; display: block; margin-bottom: 40px; background-image:url(../images/shared/header_bg.png); background-repeat: repeat-x; background-position: top; }
-	#Header .Content				{ width: 1000px; margin: auto; }
-	#Header .Content .Logo			{ float: left; padding: 0 40px 0 0; }
-	#Header .Content .Nav1			{ float: left; background-image:url(../images/shared/header_bg_Nav1.png); background-repeat: no-repeat; width:160px; height: 130px; padding-top: 25px; }
+	#Header .Content				{ width: 1024px; margin:auto;}
+	#Header .Content .Logo			{ float: left; padding: 0 25px 0 25px; }
+	#Header .Content .Nav1			{ float: left; background-image:url(../images/shared/header_bg_Nav1.png); background-repeat: no-repeat; width:180px; height: 130px; padding-top: 25px; }
 	#Header .Content .Nav1 li		{ padding: 5px 0; list-style-image:url(../images/shared/header_list.gif); }
 	#Header .Content .Nav1 a		{ font-size: 16px; color: #999; text-decoration: none; }
 	#Header .Content .Nav1 a:hover	{ color: #666; }
@@ -262,3 +262,25 @@
 	.lb-data .lb-number 	{ display: block; clear: left; padding-bottom: 1em; font-size: 11px; }
 	.lb-data .lb-close 		{ width: 35px; float: right; padding-bottom: 0.7em; outline: none; }
 	.lb-data .lb-close:hover{ cursor: pointer; }
+
+/* Hotel & Tours Overview */
+
+/* Tabbed Offers Widget */
+	#tabbedinfobox 						{ float:left; width:970px; border: 1px solid #E4E4E4; background-color: #FFF; }
+	#tabscontent 						{ float:left; }
+	#tabbedinfobox ul.tabs 				{ list-style:none; margin:0 !important; padding:0; height:50px; }
+	#tabbedinfobox ul.tabs li 			{ float:left; padding:0; background: url(../images/shared/tab_bg.png); background-repeat:repeat-x; }
+	#tabbedinfobox ul.tabs a 			{ display:block; background-image:url(../images/shared/tab_divider.png); background-repeat: no-repeat; background-position: left; font-size:14px; display:block; height:50px; width: 194px; line-height:50px; text-align:center; text-decoration:none; color:#666; padding:0px; margin:0px; position:relative; top:0; outline: none;}
+	#tabbedinfobox ul.tabs a:active 	{ outline: none; }
+	/* when mouse enters the tab move the background image */
+	#tabbedinfobox ul.tabs a:hover 		{ background-image:url(../images/destinations/tab_bg_selected.png); background-repeat:repeat-x; outline:none; color: #666; }
+	/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+	#tabbedinfobox ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a { background-image:url(../images/shared/tab_bg_selected.png); background-repeat:repeat-x; cursor:default !important; outline:none; color: #666; }
+	#tabbedinfobox #content 			{ width:970px; float: left; height: auto; margin: 7px 0 0 7px; }
+	#tabbedinfobox #content #contentrow { float:left; width:970px; }
+	#tabbedinfobox #content #infocontent{ width:98%; height:auto; margin: 5px; float: left; font-size: 14px; }
+	/* tab pane styling */ 
+	#tabbedinfobox .panes > div { display:none; width:470px; }
+	/* initially all panes are hidden */ 
+	#tabbedinfobox .panes .pane { display:none; }
+	
