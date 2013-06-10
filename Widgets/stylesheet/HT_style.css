@@ -2,9 +2,13 @@
 /* CSS Document */
 
 /* Basic layout elements */
-	body 									{ font-family: Arial, Helvetica, sans-serif; color: #666; font-size:11px; margin: 0; padding: 0; }
-	a 										{ outline: none; }
-	#Content								{ width: 970px; padding: 20px; margin: auto; }
+	body 	{ font-family: Arial, Helvetica, sans-serif; color: #666; font-size:11px; margin: 0; padding: 0; }
+	a 		{ outline: none; }
+	
+	h1		{ font-size: 22px; color: #999; margin-bottom: 30px; padding: 0 0 10px 0; }
+	
+	#Content								{ width: 970px; padding: 20px; margin: auto; min-height: 500px; }
+	#Content .description					{ padding-bottom: 40px; font-size:13px; }
 	/* Search Panel - Hotel Selection - Scrolling Destinations - Skyscraper advert */
 	#Content #Row1 							{ width:auto; height:600px; marging-bottom: 20px; }
 	#Content #Row1 #SearchBrowsePanel		{ width:350px; height:340px; float:left;  }
@@ -22,29 +26,31 @@
 	#Content #Row4 #tabbedoffersbox			{ height:250px; float:left; width:645px; border: 1px solid #E4E4E4; background-color: #FFF; }
 	
 /* Header */
-	#Header					{ height: 130px; width: 100%; display: block; margin-bottom: 40px; background-image:url(../images/shared/header_bg.png); background-repeat: repeat-x; background-position: top; }
-	#Header .Logo			{ margin-left: 15%; float: left; padding: 0 40px 0 0; }
-	#Header .Nav1			{ float: left; background-image:url(../images/shared/header_bg_Nav1.png); background-repeat: no-repeat; width:183px; height: 130px; padding-top: 25px; }
-	#Header .Nav1 li		{ padding: 5px 0; list-style-image:url(../images/shared/header_list.gif); }
-	#Header .Nav1 a			{ font-size: 16px; color: #999; text-decoration: none; }
-	#Header .Nav1 a:hover	{ color: #666; }
-	#Header .Nav2 li		{ float: left; list-style-type:none; text-align: center; padding: 30px 60px; background-image:url(../images/shared/header_divider.png); background-repeat: no-repeat; background-position: right; }
-	#Header .Nav2 a			{ font-size:20px; color:#007AC5; text-decoration:none; }
-	#Header .Nav2 a:hover	{ color:#00649F; }
-	#Header .Nav2 .Text		{ font-size:35px; }
+	#Header							{ height: 130px; width: 100%; display: block; margin-bottom: 40px; background-image:url(../images/shared/header_bg.png); background-repeat: repeat-x; background-position: top; }
+	#Header .Content				{ width: 1000px; margin: auto; }
+	#Header .Content .Logo			{ float: left; padding: 0 40px 0 0; }
+	#Header .Content .Nav1			{ float: left; background-image:url(../images/shared/header_bg_Nav1.png); background-repeat: no-repeat; width:160px; height: 130px; padding-top: 25px; }
+	#Header .Content .Nav1 li		{ padding: 5px 0; list-style-image:url(../images/shared/header_list.gif); }
+	#Header .Content .Nav1 a		{ font-size: 16px; color: #999; text-decoration: none; }
+	#Header .Content .Nav1 a:hover	{ color: #666; }
+	#Header .Content .Nav2 li		{ float: left; list-style-type:none; text-align: center; padding: 30px 30px; background-image:url(../images/shared/header_divider.png); background-repeat: no-repeat; background-position: right; }
+	#Header .Content .Nav2 a		{ font-size:20px; color:#007AC5; text-decoration:none; }
+	#Header .Content .Nav2 a:hover	{ color:#00649F; }
+	#Header .Content .Text			{ font-size:35px; }
 	
 /* Footer */
-	#Footer								{ height:160px; width: 100%; display:block; margin-top: 40px; background-image:url(../images/shared/footer/footer_bg.png); background-repeat: repeat-x; background-position:bottom; }
-	#Footer .Nav1						{ float:left; margin-left: 20%; margin-top: 8px; }
-	#Footer .Nav1 li					{ padding: 5px 0; text-align:right; list-style-type:none; }
-	#Footer .Nav1 a						{ color: #999; font-size:16px; text-decoration:none; }
-	#Footer .Nav1 a:hover				{ color: #666; }
-	#Footer .Nav2						{ float:left; padding-left: 40px; margin-left: 40px; background-image:url(../images/shared/footer/footer_divider.png); background-repeat:no-repeat; background-position: left; height: 160px;}
-	#Footer .Nav2 .Logo					{ padding-top: 35px; }
-	#Footer .Nav2 .Copyright			{ margin-top: 15px; }
-	#Footer .Nav2 .Copyright a			{ color:#007AC5; }
-	#Footer .Nav2 .Copyright a:hover	{ color:#00649F; }
-	#Footer .Nav3						{ float:right; margin-right: 20%; padding-top: 35px; }
+	#Footer										{ height:160px; width: 100%; display:block; margin-top: 40px; background-image:url(../images/shared/footer/footer_bg.png); background-repeat: repeat-x; background-position:bottom; }
+	#Footer .Content							{ width: 1000px; margin: auto; }
+	#Footer .Content .Nav1						{ float:left; margin-top: 8px; }
+	#Footer .Content .Nav1 li					{ padding: 5px 0; text-align:right; list-style-type:none; }
+	#Footer .Content .Nav1 a					{ color: #999; font-size:16px; text-decoration:none; }
+	#Footer .Content .Nav1 a:hover				{ color: #666; }
+	#Footer .Content .Nav2						{ float:left; padding-left: 45px; margin-left: 40px; background-image:url(../images/shared/footer/footer_divider.png); background-repeat:no-repeat; background-position: left; height: 160px;}
+	#Footer .Content .Nav2 .Logo				{ padding-top: 35px; }
+	#Footer .Content .Nav2 .Copyright			{ margin-top: 15px; }
+	#Footer .Content .Nav2 .Copyright a			{ color:#007AC5; }
+	#Footer .Content .Nav2 .Copyright a:hover	{ color:#00649F; }
+	#Footer .Content .Nav3						{ float:right; padding-top: 35px; margin-right: 5%; }
 	
 	
 /* Search Panel */
@@ -148,3 +154,111 @@
 	ul.thumb li 			{ float:left; padding:0px; width:242px; height:138px; position:relative; }
 	ul.thumb li img 		{ width:242px; height:138px; padding:0px; position:absolute; left:0; top:0; -ms-interpolation-mode:bicubic; }
 	ul.thumb li img.hover 	{ background:url(../images/categories/thumb_bg.png) no-repeat center center; border: none; }
+	
+/* Click for special deals */
+	#Click_deal						{ height: 180px; border:1px solid #E5E5E5; padding: 15px; margin-bottom:40px;}
+	#Click_deal .property			{ font-size:16px; font-weight: bold; display:inline; padding-right:20px; }
+	#Click_deal .region				{ font-size:14px; }
+	#Click_deal .thumb img			{ float: left; display: inline-block; padding: 15px 20px 0 0; }
+	#Click_deal .description		{ float: left; display: inline-block; padding: 18px 20px 0 0; width: 560px; font-size: 14px; line-height: 20px; height:120px; overflow: hidden; }
+	#Click_deal .price_description	{ font-size:13px; text-align: right; font-weight: bold; color:#007AC5; padding-top: 25px;}
+	#Click_deal .price				{ font-size:30px; font-weight: bold; }
+	#Click_deal .button				{ float: right; padding: 20px 0;}
+	
+	
+/* Single deal */
+	#Single_deal							{ width:970px; margin-bottom: 50px; display: inline-block; border:1px solid #E5E5E5; padding: 15px; }
+	#Single_deal .property					{ font-size:16px; font-weight: bold; display:inline; padding-right:20px; }
+	#Single_deal .region					{ font-size:14px; }
+	#Single_deal .gallery					{ float: left; display: inline-block; padding: 0 20px 0 0; }
+	#Single_deal .gallery .thumb img		{ padding-top: 15px; }
+	#Single_deal .Col1						{ float: left; display: inline-block; width: 250px; padding-top: 15px;}
+	#Single_deal .Col1 .price_description	{ font-size:13px; font-weight: bold; color:#007AC5;}
+	#Single_deal .Col1 .price				{ font-size:30px; font-weight: bold; }
+	#Single_deal .Col1 .sellingpoint		{ font-weight: bold; font-size: 14px; color: #F48825; margin: 15px 0; width: 200px; height: 15px; overflow: hidden; }
+	#Single_deal .Col1 .freetext			{ width: 200px; height: 125px; overflow: hidden; padding-top: 20px;}
+	#Single_deal .Col1 .dates				{ width: 200px; margin-top: 20px; border:1px solid #999;}
+	#Single_deal .Col1 .dates .heading		{ background-color: #999; color: #FFF; font-weight: bold; padding:5px; }
+	#Single_deal .Col1 .dates .col1			{ padding:3px 10px; }
+	#Single_deal .Col1 .dates .col2			{ padding:3px; }
+	#Single_deal .Col1 .dates a				{ color:#007AC5; }
+	#Single_deal .Col1 .dates a:hover		{ color:#00649F; }
+	#Single_deal .Col2						{ padding-top: 15px; width: 570px; display: inline-block; }
+	#Single_deal .Col2 .heading				{ font-weight: bold; font-size: 13px;}
+	#Single_deal .Col2 ul					{ margin: 7px; padding-left: 15px;}
+	/* Multiple deal back to top */
+	#Single_deal .top a						{ color:#007AC5; float: right; }
+	#Single_deal .top a:hover				{ color:#00649F; }
+	/* Recommended deal */
+	#Single_deal.recommended				{ width:970px; margin-bottom: 50px; display: inline-block; border:2px solid #F48825; padding: 15px; background-image:url(../images/specials/recommended_bg.jpg); background-repeat: no-repeat; background-position: top right;}
+	
+	
+/* Multiple deals */
+	#Deal_List							{ margin-bottom: 80px; }
+	#Deal_List .freetext				{ float: right; margin-top: 27px; width: 300px; height: 200px;; overflow: hidden; text-align: center; }
+	#Deal_List li						{ list-style: none; margin: 0; padding: 30px 0; }
+	#Deal_List .col1					{ width:350px; display:inline; float: left; }
+	#Deal_List .col1 .property			{ font-size: 16px; padding-right: 10px; font-weight: bold; }
+	#Deal_List .col1 .region			{ font-size: 14px; }
+	#Deal_List .col2					{ width:100px; display:inline; float: left; }
+	#Deal_List .col2 .price_description { color: #007AC5; }
+	#Deal_List .col2 .price				{ font-weight: bold; font-size: 18px; }
+	#Deal_List .col3					{ width:100px; display:inline; float: left; }
+	#Deal_List .col3 .button			{ float: right; }
+
+/* Article with deals */
+	#Article										{ display: inline-block; }
+	#Article .container								{ float: left; display: inline-block; width: 640px; padding: 0 30px 50px 0; }
+	#Article .container	.content					{ padding-bottom: 40px; }
+	#Article .container	.content .subHeading		{ font-size: 16px; font-weight: bold; padding-bottom:20px;}
+	#Article .container	.content .subContent		{ font-size: 14px;}
+	#Article .container	.content .subContent a		{ color:#007AC5; float: right; }
+	#Article .container	.content .subContent a:hover{ color:#00649F; }
+	#Article .gallery								{ float: right; width: 300px;}
+	#Article .gallery .thumb						{ float: left; padding: 0 0 20px 20px;}
+	
+/* Destination List */
+	#Container 							{ text-align: justify; -ms-text-justify: distribute-all-lines; text-justify: distribute-all-lines; }
+	#Destination_List					{ width: 220px; height: 230px; display: inline-block; margin: 0 0 25px 0; border:1px solid #E5E5E5; vertical-align: top; display: inline-block; *display: inline; zoom: 1;  }
+	#Destination_List .destination_name	{ font-size: 16px; font-weight: bold; padding: 10px 0 0 10px; text-align: left;}
+	#Destination_List .destination_thumb{ padding: 5px 0; width: 200px; height:120px; padding-left: 10px; text-align: left;}
+	#Destination_List .price_description{ color: #007AC5; padding-left: 10px;  text-align: left;}
+	#Destination_List .price			{ font-weight: bold; font-size: 16px; }
+	#Destination_List .button			{ float: right; padding: 10px 10px 0 0; }
+	#Gutter								{ width: 20px; display: inline-block;}
+	
+/* Catgegory List */
+	#Container 							{ text-align: justify; -ms-text-justify: distribute-all-lines; text-justify: distribute-all-lines; }
+	#Category_List						{ width: 220px; height: 230px; margin: 0 0 25px 0; border:1px solid #E5E5E5; vertical-align: top; display: inline-block; *display: inline; zoom: 1; }
+	#Category_List .category_name		{ font-size: 16px; font-weight: bold; padding: 10px 0 0 10px; text-align: left; }
+	#Category_List .category_thumb		{ padding: 5px 0; width: 200px; height:120px; padding-left: 10px; text-align: left; }
+	#Category_List .price_description	{ color: #007AC5; padding-left: 10px; text-align: left;  }
+	#Category_List .price				{ font-weight: bold; font-size: 16px;  }
+	#Category_List .button				{ float: right; padding: 10px 10px 0 0; }
+	#Container .stretch					{ width: 100%; display: inline-block; font-size: 0; line-height: 0; }
+	
+/* Lightbox Gallery */
+	#lightboxOverlay 		{ position: absolute; top: 0; left: 0; z-index: 9999; background-color: black; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85); opacity: 0.85; display: none; }
+	#lightbox 				{ position: absolute; left: 0; width: 100%; z-index: 10000; text-align: center; line-height: 0; font-family: "lucida grande", tahoma, verdana, arial, sans-serif; font-weight: normal; }
+	#lightbox img 			{ width: auto; height: auto; }
+	#lightbox a img 		{ border: none; }
+	.lb-outerContainer 		{ position: relative; background-color: white; *zoom: 1; width: 250px; height: 250px; margin: 0 auto; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+	.lb-outerContainer:after{ content: ""; display: table; clear: both; }
+	.lb-container 			{ padding: 10px; }
+	.lb-loader 				{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+	.lb-nav 				{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+	.lb-container > .nav 	{ left: 0; }
+	.lb-nav a 				{ outline: none; }
+	.lb-prev, .lb-next 		{ width: 49%; height: 100%; background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"); display: block; }
+	.lb-prev 				{ left: 0; float: left; }
+	.lb-next 				{ right: 0; float: right; }
+	.lb-prev:hover 			{ background: url(../images/shared/lightbox/prev.png) left 48% no-repeat; }
+	.lb-next:hover 			{ background: url(../images/shared/lightbox/next.png) right 48% no-repeat; }
+	.lb-dataContainer 		{ margin: 0 auto; padding-top: 5px; *zoom: 1; width: 100%; -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -ms-border-bottom-left-radius: 4px; -o-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -ms-border-bottom-right-radius: 4px; -o-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+	.lb-dataContainer:after { content: ""; display: table; clear: both; }
+	.lb-data 				{ padding: 0 10px; color: #bbbbbb; }
+	.lb-data .lb-details 	{ width: 85%; float: left; text-align: left; line-height: 1.1em; }
+	.lb-data .lb-caption 	{ font-size: 13px; font-weight: bold; line-height: 1em; }
+	.lb-data .lb-number 	{ display: block; clear: left; padding-bottom: 1em; font-size: 11px; }
+	.lb-data .lb-close 		{ width: 35px; float: right; padding-bottom: 0.7em; outline: none; }
+	.lb-data .lb-close:hover{ cursor: pointer; }
