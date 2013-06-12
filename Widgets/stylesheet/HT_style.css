@@ -7,7 +7,7 @@
 	
 	h1		{ font-size: 22px; color: #999; margin-bottom: 30px; padding: 0 0 10px 0; }
 	
-	#Content								{ width: 970px; padding: 20px; margin: auto; min-height: 500px; }
+	#Content								{ width: 970px; padding: 20px; margin: auto; min-height: 500px; display: table;}
 	#Content .description					{ padding-bottom: 40px; font-size:13px; }
 	/* Search Panel - Hotel Selection - Scrolling Destinations - Skyscraper advert */
 	#Content #Row1 							{ width:auto; height:600px; marging-bottom: 20px; }
@@ -225,7 +225,6 @@
 	#Destination_List .price_description{ color: #007AC5; padding-left: 10px;  text-align: left;}
 	#Destination_List .price			{ font-weight: bold; font-size: 16px; }
 	#Destination_List .button			{ float: right; padding: 10px 10px 0 0; }
-	#Gutter								{ width: 20px; display: inline-block;}
 	
 /* Catgegory List */
 	#Container 							{ text-align: justify; -ms-text-justify: distribute-all-lines; text-justify: distribute-all-lines; }
@@ -264,23 +263,124 @@
 	.lb-data .lb-close:hover{ cursor: pointer; }
 
 /* Hotel & Tours Overview */
-
+	#Property_col1								{ width: 470px; height: 220px; float: left; margin-right: 18px; }
+	#Property_col1 .Property_heading			{ font-size: 22px; color: #999; height: 40px; }
+	#Property_col1 .Property_heading .heading	{ padding-right: 15px; }
+	#Property_col1 .icon_request				{ padding-right: 15px; }
+	#Property_col1 .star						{ display:inline-block;}
+	#Property_col2								{ width: 160px; float: left; margin: 43px 28px 0 15px; }
+	#Property_col2 .dealinfo					{ padding: 10px 0 0 0; }
+	#Property_col2 .priceinfo					{ text-align:right; padding: 0 0 20px 0;}
+	#Property_col2 .priceinfo a					{ color:#007AC5;  }
+	#Property_col2 .priceinfo a:hover			{ color:#00649F; }
+	#Property_col2 .price_description			{ color:#007AC5; font-size: 16px; margin:auto;}
+	#Property_col2 .price_description a			{ color:#007AC5; }
+	#Property_col2 .price_description .price	{ font-weight: bold; font-size: 22px; display: block}
+	#Property_col3								{ width: 280px; height: 220px; float: left; background-color:#CCCCCC;}
+	
+	/* Hotel & Tours Overview Search Panel*/
+	#Searchbox									{ width: 440px; height: 130px; border:1px solid #ccc; padding: 15px; margin-top: 20px; background-image:url(../images/searchpanel/searchpanel_property_bg.png); background-repeat:no-repeat; }
+	#msbox table								{ width: 440px; margin-top: 43px; }
+	#msbox .label_property	select				{ width: 150px; margin-left: 10px; }
+	#msbox input, select, textarea 				{ font-size:11px; color: #333; }
+	#msbox #div_Outward_Date_Month				{ margin-right: 15px; }
+	#msbox #div_Outward_Date_Month select		{ width: 70px; margin: 10px 0;}
+	#msbox #div_Outward_Date select				{ width: 70px;  margin-left: 9px; }
+	#msbox #div_Return_Date select				{ width: 70px;  margin-left: 10px; }
+	#msbox button, textarea, select 			{ display: inline; width: 90%; vertical-align: middle; margin: 0 5px 0 0; }
+	#msbox .button								{ float: right; margin-top: 5px; display:block; }
+	
+	
 /* Tabbed Offers Widget */
 	#tabbedinfobox 						{ float:left; width:970px; border: 1px solid #E4E4E4; background-color: #FFF; }
 	#tabscontent 						{ float:left; }
-	#tabbedinfobox ul.tabs 				{ list-style:none; margin:0 !important; padding:0; height:50px; }
-	#tabbedinfobox ul.tabs li 			{ float:left; padding:0; background: url(../images/shared/tab_bg.png); background-repeat:repeat-x; }
-	#tabbedinfobox ul.tabs a 			{ display:block; background-image:url(../images/shared/tab_divider.png); background-repeat: no-repeat; background-position: left; font-size:14px; display:block; height:50px; width: 194px; line-height:50px; text-align:center; text-decoration:none; color:#666; padding:0px; margin:0px; position:relative; top:0; outline: none;}
-	#tabbedinfobox ul.tabs a:active 	{ outline: none; }
+	ul.tabs 				{ list-style:none; margin:0 !important; padding:0; height:50px; }
+	ul.tabs li 			{ float:left; padding:0; background: url(../images/shared/tab_bg.png); background-repeat:repeat-x; }
+	ul.tabs a 			{ display:block; background-image:url(../images/shared/tab_divider.png); background-repeat: no-repeat; background-position: left; font-size:14px; display:block; height:50px; width: 194px; line-height:50px; text-align:center; text-decoration:none; color:#666; padding:0px; margin:0px; position:relative; top:0; outline: none;}
+	ul.tabs a:active 	{ outline: none; }
 	/* when mouse enters the tab move the background image */
-	#tabbedinfobox ul.tabs a:hover 		{ background-image:url(../images/destinations/tab_bg_selected.png); background-repeat:repeat-x; outline:none; color: #666; }
+	ul.tabs a:hover 		{ background-image:url(../images/destinations/tab_bg_selected.png); background-repeat:repeat-x; outline:none; color: #666; }
 	/* active tab uses a class name "current". its highlight is also done by moving the background image. */
-	#tabbedinfobox ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a { background-image:url(../images/shared/tab_bg_selected.png); background-repeat:repeat-x; cursor:default !important; outline:none; color: #666; }
+	ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a { background-image:url(../images/shared/tab_bg_selected.png); background-repeat:repeat-x; cursor:default !important; outline:none; color: #666; }
 	#tabbedinfobox #content 			{ width:970px; float: left; height: auto; margin: 7px 0 0 7px; }
 	#tabbedinfobox #content #contentrow { float:left; width:970px; }
 	#tabbedinfobox #content #infocontent{ width:98%; height:auto; margin: 5px; float: left; font-size: 14px; }
 	/* tab pane styling */ 
-	#tabbedinfobox .panes > div { display:none; width:470px; }
+	.panes > div { display:none; width:470px; }
 	/* initially all panes are hidden */ 
-	#tabbedinfobox .panes .pane { display:none; }
+	.panes .pane { display:none; }
+	
+/* Deals by Departure */
+	#hdheader				{ font-size: 16px; font-weight: bold; margin-bottom: 20px; }
+	#hdbox 					{ height: auto; width: 940px; float: left; border: 1px solid #E4E4E4; padding: 15px; margin: 20px 0; font-size: 14px; }
+	#hdbox .hdborder 		{ margin: 40px 0;}
+	#hdbox .hd_date  		{ width:100px; }	
+	#hdbox .hd_dest 		{ width:200px; }
+	#hdbox .hd_pic			{ width: 55px;}
+	#hdbox .hd_thumb		{ width: 55px; height: 40px; }
+	#hdbox .hd_info			{ width: 10px; padding: 0 15px;}
+	#hdbox .hd_prop			{ width:300px; }
+	#hdbox .hd_nights		{ }
+	#hdbox .hd_price		{ color:#007AC5; text-align: right;}
+	#hdbox .hd_price a		{ color:#007AC5; font-weight: bold; font-size: 16px; text-decoration: none;}
+	#hdbox .hd_price a:hover{ color:#00649F; }
+	
+/* Static Pages */
+	#Static					{ width:750px; margin-right: 20px; float:left; display: inline-block; height: 1%;}
+	#Static .Nav ul			{ list-style:none; margin: 0 0 0 -15px; padding: 0;}
+	#Static .Nav li			{ float: left; padding: 0 15px; border-right:1px solid #ccc; }
+	#Static .Nav a			{ color:#007AC5; text-decoration: none; font-size: 14px; }
+	#Static .Nav a:hover	{ color:#00649F; }
+	#Static .Nav a:active	{ font-weight: bold;}
+	/* Deals accordion Widget */
+	#deals-accordion 				{ float: left; width: 790px; height:500px; padding-top:20px;}
+	#deals-accordion h2 			{ width: 750px; height:40px; font-size: 16px; background-image:url(../images/shared/tab_bg.png); background-repeat:repeat-x; text-indent: 20px; line-height: 40px; border:1px solid #efefef; cursor:pointer; font-weight: normal;}
+	#deals-accordion h2.current 	{ width: 750px; height:40px; font-size: 16px; background-image:url(../images/shared/tab_bg_selected.png); background-repeat:repeat-x; text-indent: 20px; line-height: 40px; margin:0; }
+	#deals-accordion .pane 			{ display:none; width: 750px; font-size: 14px; }
+	#deals-accordion .pane p		{ padding: 0 20px; }
+	#deals-accordion .pane a		{ color:#007AC5; }
+	#deals-accordion .pane a:hover 	{ color:#00649F; }
+
+	
+/* Destinations results */
+	#Nav1			{ width:970px; float:left; margin-bottom: 20px;}
+	#Nav1 ul		{ list-style:none; margin: 0 0 0 -15px; padding: 0;}
+	#Nav1 li		{ float: left; padding: 0 15px; border-right:1px solid #ccc; }
+	#Nav1 a			{ color:#007AC5; text-decoration: none; font-size: 14px; }
+	#Nav1 a:hover	{ color:#00649F; }
+	#Nav2			{ width:970px; float:left; background-color: #0098DC; border-bottom: 3px solid #CCC; }
+	#Nav2 ul		{ list-style:none; margin: 0; padding: 0;}
+	#Nav2 li		{ float: left; padding: 8px; color: #FFF; }
+	#Nav2 a			{ color:#FFF; text-decoration: none; font-size: 14px; border-right:1px solid #FFF; padding-right: 15px;}
+	#Filter							{ border-bottom: 1px solid #E5E5E5; line-height: 40px;}
+	#Filter .sort					{ font-weight: bold; font-size: 13px; padding-right: 30px;}
+	#Filter .LowHigh				{ font-weight: bold; font-size: 13px;}
+	#Filter .HighLow				{ font-weight: bold; font-size: 13px}
+	#Filter .category				{ padding-left: 40px; }
+	#Filter .category select		{ width: 150px; font-size: 13px; font-weight: bold; color: #666;}
+	#Filter .destination			{ padding-left: 40px; }
+	#Filter .destination select		{ width: 180px; font-size: 13px; font-weight: bold; color: #666;}
+	#Filter .Pagination				{ float: right; }
+	#Filter .Pagination a			{ color:#007AC5; text-decoration: none; padding: 0 2px;}
+	#Filter .Pagination a:hover		{ color:#00649F; }
+	#Filter .Pagination a:active	{ color:#00649F; text-decoration: underline; font-weight: bold; font-size: 13px;}
+	
+	/* Deals scrolling widget */
+	#dealsoffersbox 					{ float:left; width:970px; margin-top: 20px; height:auto; }
+	#deal-wrapper 						{ width:159px; float:left; height:auto; padding: 10px 0px 10px 13px; border: 1px solid #E5E5E5; margin: 0 10px 10px 10px; }
+	#deal-box 							{ width:159px; height:auto; float:left; padding: 2px;}
+	#dealinfo 							{ width:150px; height: 31px; overflow:hidden; float:left; font-weight:bold; font-size: 12px; margin-bottom: 10px; line-height: 15px; }
+	#deal-box .dealthumb 				{ width:145px; height: 100px; margin-bottom:10px;}
+	#deal-box .price_description  		{ color:#00649F; margin-bottom:10px; }
+	#deal-box .price_description .price	{ font-weight: bold; font-size: 16px;}
+ 	#deal-box .button					{ margin-left: 45px;}
+	#dealsoffersbox #dealbuttons 		{ text-align:right; clear:both; font-size: 14px; display: block;}
+	#dealsoffersbox #dealbuttons a 		{ color:#00649F; }
+	#dealsoffersbox #dealbuttons a:hover{ color:#00649F;}
+	/*	root element for the scrollable. when scrolling occurs this element stays still.*/
+	.dealsscrollable {/* required settings */position:relative;overflow:hidden; width: 970px; height:760px;}
+	/*	root element for scrollable items. Must be absolutely positioned and it should have a extremely large width to accomodate scrollable items. it's enough that you set the width and height for the root element and not for this element.*/
+	.dealsscrollable .dealsitems {/* this cannot be too large */width:20000em;position:absolute;clear:both;}
+	.dealsitems div 					{float:left; width:970px;}
+
 	

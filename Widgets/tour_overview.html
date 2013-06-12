@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1155" />
+<link href="stylesheet/HT_style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js" type="text/javascript"></script>
+<title>Tour Overview Page</title>
+</head>
+
+<body>
+
+	<!-- START Header -->
+    		<div id="Header">
+            <div class="Content">
+                <div class="Logo"><a href="#"><img src="images/shared/HT_logo.png" border="0"/></a></div>
+                <div class="Nav1">
+                    <ul>
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">Enquiries</a></li>
+                    </ul>
+                </div>
+                <div class="Nav2">
+                        <li><a href="#">Discover all our <br /><span class="Text">Destinations</span></a></li>
+                        <li><a href="#">Browse all our <br /><span class="Text">Holiday Categories</span></a></li>
+                </div>    
+            </div>
+    	</div>
+
+    <!-- END Header -->
+    
+	<div id="Content">
+    
+    	<div id="Property_col1">
+                <div class="Property_heading"><span class="heading">The Twelve Apostels Hotel & Spa</span><span class="icon_request"><img src="images/shared/onrequest.gif" /></span><span class="star"><img src="images/shared/star_on.png"/><img src="images/shared/star_on.png"/><img src="images/shared/star_on.png"/><img src="images/shared/star_off.png"/><img src="images/shared/star_off.png"/></span></div>
+        <!-- Search Panel -->
+        			<div id="Searchbox">
+                          <div id="msbox">
+                          <form method="post" name="miniSearchForm" action="http://holidays.holidaytours.co.za/sell-it?command=MS&lastPage=%2Fspecific%2Fkulula%2FaccommodationInfo-new.jsp&benum=holidaytours&pagePath=/specific/kulula/accommodationInfo-new.jsp">
+                                        <div class="mini_show" id="options">
+                                          <!--input type="hidden" name="Package_Type" value="PH"/-->
+                                          <input type="hidden" name="Search_Destination" id="Search_Destination" value="ACC-DWV,AC,,De Waterkant Village"/>
+                                          <input type="hidden" name="Outward Window" value="-1"/>
+                                          <input type="hidden" name="Duration" value="-1"/>
+                                          
+                                          <div class="mini_float" id="sub_options">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tr>
+                                                <td colspan="4">
+                                                	<div class="label_property">Departing from:
+                                                        <select name="Origin" class="miniformobject" id="Origin" onChange="onChangeMiniSearchKulula('Origin')">
+                                                            <option value="DUR,AI,,Durban">Durban</option>
+                                                            <option value="JNB,AI,,Johannesburg">Johannesburg</option>
+                                                            <option value="HLA,AI,,Lanseria">Lanseria</option>
+                                                        </select>
+                                                    </div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                <td colspan="2">Departure Date:
+                                                		<span id="div_Outward_Date">
+                                                      <select id="Outward_Date" name="Outward_Date" class="miniformobject"></select>
+                                                    </span>
+                                                    <span id="div_Outward_Date_Month">
+                                                      <select id="Outward_Date_Month" name="Outward_Date_Month" class="miniformobject" onChange="change()"></select>
+                                                    </span>
+                                                    <input id="pk-out-calendar" type="hidden"/>
+                                                    Return date:
+                                                		<span id="div_Return_Date">
+                                                      <select id="Return_Date" name="Return_Date" class="miniformobject"></select>
+                                                    </span>
+                                                    <input id="pk-return-calendar" type="hidden"/>
+                                                </td>
+                                              </tr>
+                                                <td colspan="4">
+                                                  <input type="image" name="miniSearch1" src="images/buttons/button_search.png"  alt="Search" border="0" class="button">
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </div>
+                              </form><!--
+                              <script>
+                             
+                             function initDateRestrictions($sDatePickerId, $nOffsetInDays) {
+                              
+                                 $($sDatePickerId).datepicker( 'option' , 'minDate' , '+0d' );
+                                 $($sDatePickerId).datepicker( 'option' , 'maxDate' , '+13m' );
+                                 $($sDatePickerId).datepicker( 'option' , 'defaultDate' , '++' + $nOffsetInDays + 'd' );
+                             }
+                             $(document).ready(function(){
+                                 //initDateRestrictions("#datepicker1", 10);
+                                 //initDateRestrictions("#datepicker2", 14);
+                                 var $sImgPath = "//holidays.holidaytours.co.za/images/branding/kulula-ht//datepicker/calendar.gif";
+                                 linkDatepickerToAjaxDropDowns( 
+                                     "pk-out-calendar", 
+                                     "Outward_Date",
+                                     "Outward_Date_Month", 
+                                     "Departure Date",
+                                      $sImgPath
+                                 );
+                                 linkDatepickerToAjaxDropDowns( 
+                                     "pk-return-calendar",
+                                     "Return_Date",
+                                     null, 
+                                     "Return Date",
+                                     $sImgPath
+                                 );
+                                 onChangeMiniSearchKulula('Origin');
+                                 
+                             });
+                      </script>-->
+				  </div>
+			</div>
+       			 <!-- end of Search Panel-->
+        </div>
+        <div id="Property_col2">
+			 <div class="price_description"><a href="#">Check it out</a> from <span class="price">R22 589</span></div>
+             <div class="dealinfo">Sounds good? Click Enquire now below and we’ll contact you.</div>
+             <div class="priceinfo"></div>
+             <div class="button"><center><input type="image" name="enquirenow" src="images/buttons/button_enquire.png"  alt="Search" border="0" class="button"></center></div>
+		</div>
+        <div id="Property_col3">
+        	<div id="slideshow"> Replace with Slideshow
+                </div>
+		</div>
+        <!-- Deals by departure -->
+        
+        <div id="hdbox">
+        <div id="hdheader">Top Holiday Deals</div>
+              <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                <tr class="hdborder">
+                  <td class="hd_date">30-Sep-13</td>
+                  <td class="hd_dest">from <b>Johannesburg</b></td>
+                  <td class="hd_pic"><img src="images/specials/specials_thumb1.jpg" alt="hdthumb" class="hd_thumb" /></td>
+                  <td class="hd_info"><a href="javascript:;" onClick="MM_openBrWindow('')"><img src="images/shared/info.png" alt="info" border="0"/></a></td>
+                  <td class="hd_prop">The Twelve Apostels Hotel & Spa</td>
+                  <td class="hd_nights">1 Nights</td>
+                  <td class="hd_price">from <a href="#" >R18 855</a></td>
+                </tr>
+                <tr class="hdborder">
+                  <td class="hd_date">15-Aug-13</td>
+                  <td class="hd_dest">from <b>Durban</b></td>
+                  <td ><img src="images/specials/specials_thumb1.jpg" alt="hdthumb" class="hd_thumb" /></td>
+                  <td class="hd_info"><a href="javascript:;" onClick="MM_openBrWindow('')"><img src="images/shared/info.png" alt="info" border="0"/></a></td>
+                  <td class="hd_prop">The Twelve Apostels Hotel & Spa</td>
+                  <td class="hd_nights">1 Nights</td>
+                  <td class="hd_price">from <a href="#" >R10 878</a></td>
+                </tr>
+                <tr class="hdborder">
+                  <td class="hd_date">30-Sep-13</td>
+                  <td class="hd_dest">from <b>Port Elizabeth</b></td>
+                  <td ><img src="images/specials/specials_thumb1.jpg" alt="hdthumb" class="hd_thumb" /></td>
+                  <td class="hd_info"><a href="javascript:;" onClick="MM_openBrWindow('')"><img src="images/shared/info.png" alt="info" border="0"/></a></td>
+                  <td class="hd_prop">The Twelve Apostels Hotel & Spa</td>
+                  <td class="hd_nights">1 Nights</td>
+                  <td class="hd_price">from <a href="#" >R9 875</a></td>
+                </tr>
+                <tr class="hdborder">
+                  <td class="hd_date">29-Jun-13</td>
+                  <td class="hd_dest">from <b>Cape Town</b></td>
+                  <td ><img src="images/specials/specials_thumb1.jpg" alt="hdthumb" class="hd_thumb" /></td>
+                  <td class="hd_info"><a href="javascript:;" onClick="MM_openBrWindow('')"><img src="images/shared/info.png" alt="info" border="0"/></a></td>
+                  <td class="hd_prop">The Twelve Apostels Hotel & Spa</td>
+                  <td class="hd_nights">1 Nights</td>
+                  <td class="hd_price">from <a href="#" >R10 365</a></td>
+                </tr>
+    
+            </table>
+        </div>
+        
+        
+        <!-- Property content -->
+        
+        <div id="tabbedinfobox">
+                  <div id="tabscontent">
+                      <ul class="tabs">
+                       <li><a href="#">Overview</a></li>
+                       <li><a href="#">Location</a></li>
+                       <li><a href="#">Facilities</a></li>
+                       <li><a href="#">Rooms</a></li>
+                       <li><a href="#">In-room amenities</a></li>
+                      </ul>
+                </div>
+                <div id="content">
+                 <div class="panes">
+                   <!--1st offer pane-->
+                   <div style="display:block">
+                     <div id="contentrow">
+                      <div id="infocontent">
+                       	<p>Colourful De Waterkant Village is a unique European influenced village of semi-detached quaint cottages and cobbled streets preserved from the 1760’s. Cradled between the city and the Waterfront, De Waterkant Village is avant-garde, a cultural urban refuge highlighted by the abundance of restaurants, art galleries, gay clubs, salsa clubs, tapas bars and Parisian inspired café’s. Famed for being a gay friendly hub, the village is within walking distance of bars and fashionable nightspots. Drawing comparisons from cultural and artistic villages from all over the world, De Waterkant embraces individuality and theatricality, echoed in the architecture and vibrancy of its residents and visitors.</p>
+                        <p>Walking on the beautiful sidewalks, one cannot help but be caught up in its spell, cast by the beauty of the Dutch, Georgian and Asian influenced architecture, with flower boxes under the windows, sprawling balconies and rooftop decks providing exquisite views and majestic old trees that line he streets, filtering the sun selectively through their branches. This is a place that will tempt you into its fold and dare you to indulge and delight in life’s finer pleasures. Arriving from Cape Town International Airport: - De Waterkant Village is located in De Waterkant. Situated between the Cape Town.</p>  
+                      </div>
+                     </div>
+                   </div>
+        
+                  <!--2nd offer pane-->
+                   <div style="display:block">
+                     <div id="contentrow">
+                      <div id="infocontent">
+                       		<ul>
+                        	<li>1 Loader Street</li>
+    						<li>De Waterkant</li>
+    						<li>Cape Town</li>
+    						<li>Western Cape</li>
+                            <li>South Africa</li>
+						</ul>
+                        </div>
+                     </div>
+                   </div>
+                  <!--3rd offer pane-->
+                   <div style="display:block">
+                     <div id="contentrow">
+                      <div id="infocontent">
+                       	<ul>
+                        	<li>Parking</li>
+    						<li>Pool</li>
+    						<li>The Charles Coffee Shop</li>
+    						<li>Guest Bar</li>
+                            <li>Internet access</li>
+    						<li>Function facilities</li>
+    						<li>House Keeping</li>
+    						<li>Laundry Service</li>
+                            <li>Roof Deck</li>
+    						<li>Fireplace</li>
+						</ul>
+						</div>
+                     </div>
+                   </div>
+                   <!--4th offer pane-->
+                   <div style="display:block">
+                     <div id="contentrow">
+                      <div id="infocontent">
+                       	<ul>
+                        	<li>Serviced apartments</li>
+    						<li>Houses</li>
+    						<li>Guest houses</li>
+    						<li>Traveller's rooms</li>
+						</ul>
+                      </div>
+                     </div>
+                   </div>
+                   <!--5th offer pane-->
+                   <div style="display:block">
+                     <div id="contentrow">
+                      <div id="infocontent">
+                       	<ul>
+                        	<li>Kitchen in some rooms</li>
+    						<li>En-Suite bathroom</li>
+    						<li>Mini bar fridge</li>
+    						<li>Safe</li>
+    						<li>Hairdrye</li>
+						</ul>
+                      </div>
+                     </div>
+                   </div>
+                   </div>
+                  </div>
+              </div>
+        <script language="JavaScript" type="text/javascript">
+        // perform JavaScript after the document is scriptable.
+        $(function() {
+            // setup ul.tabs to work as tabs for each div directly under div.panes
+            $("ul.tabs").tabs("div.panes > div");
+            $("ul.tabs2").tabs("div.panes2 > div");
+            $("ul.tabs3").tabs("div.panes3 > div");
+            $("ul.tabs6").tabs("div.panes > div");
+        });
+        
+        </script>
+     
+    </div>
+    
+         <!-- START Footer -->     
+            <div id="Footer">
+                <div class="Content">
+                    <div class="Nav1">
+                        <ul>
+                            <li><a href="#">Enquiries</a></li>
+                            <li><a href="#">How to pay us</a></li>
+                            <li><a href="#">Manage my booking</a></li>
+                            <li><a href="#">Agents Info</a></li>
+                        </ul>
+                    </div>
+                    <div class="Nav2">
+                        <div class="Logo"><a href="#"><img src="images/shared/footer/logo_fb.png" border="0"/></a></div>
+                        <div class="Copyright">Copyright © 1998-2013 holidaytours.co.za. All Rights Reserved. <br />Users of this site agree to be bound by the <a href="#">terms and conditions</a> of the website.</div>
+                    </div>
+                    <div class="Nav3">
+                        <div class="Logo"><img src="images/shared/footer/footer_logos.png" /></div>
+                    </div>
+              </div>
+        </div>
+     <!-- END Footer --> 
+</body>
+</html>
