@@ -363,7 +363,7 @@
                         <li><a href="#"><div class="TAB">Europe</div></a></li>
                         <li><a href="#"><div class="TAB">North America</div></a></li>
                       </ul>
-                      <div id="destpane" class="panes">
+                      <div id="destpane" class="scrollpanes">
                         <div class="div1">
                           <!-- root element for scrollable -->
                           <div class="scrollable">
@@ -462,17 +462,7 @@
                         });
                     });
                     
-                    </script>
-                    <script language="JavaScript" type="text/javascript">
-                    // perform JavaScript after the document is scriptable.
-                    $(function() {
-                        // setup ul.tabs to work as tabs for each div directly under div.panes
-                        $("ul.tabs6").tabs("div.panes > div");
-                            $("ul.tabs3").tabs("div.panes3 > div");
-                    
-                    });
-                    </script>
-                    
+                    </script>                   
                     
                     <script type="text/javascript" charset="utf-8">
                     $(document).ready(function(){
@@ -697,9 +687,8 @@
                 $(function() {
                     // setup ul.tabs to work as tabs for each div directly under div.panes
                     $("ul.tabs").tabs("div.panes > div");
-                    $("ul.tabs2").tabs("div.panes2 > div");
                     $("ul.tabs3").tabs("div.panes3 > div");
-                    $("ul.tabs6").tabs("div.panes > div");
+                    $("ul.tabs6").tabs("div.scrollpanes > div");
                 });
                 
                 </script>
