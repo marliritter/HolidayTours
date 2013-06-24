@@ -4,10 +4,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=1155" />
 <link href="stylesheet/HT_style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="images/branding/rwa-toolkit/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<link rel="stylesheet" href="stylesheet/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
 <script language="JavaScript" src="js/jquery.js" type="text/javascript"></script>
 <script language="JavaScript" src="js/prettyPhoto/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<!-- pop up form CSS and JS-->
+
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+<script language="JavaScript" src="js/pop.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script>
+
 <title>Holiday Tours | Mauritius | Europe | Asia | USA</title>
+
 
 <!-- Banner ads script -->
 	<script type='text/javascript'>
@@ -30,6 +39,52 @@
 </head>
 
 <body>
+
+   <!-- hidden inline pop up form -->
+            <div id="inline" style="overflow:scroll;">
+            <div class="Content_guide">
+                <h3>Location</h3>
+                	<p>Nestled between the ocean and the mountains, with a national park at its heart, Cape Town is a special place where a person can renew ones soul and reconnect with life. The unique topography of the region makes it easy to orientate oneself as long as you remember that with Table Mountain behind you and Robben Island before you; you are facing north, looking across Table Bay and up the west coast of Africa.</p>
+                <h3> Weather</h3>
+                    <p>Cape Town is positioned on the 34th latitude south. It is, considerably cooler in Cape Town, due to the cold Benguela current from Antarctica in the Atlantic Ocean west of the city. However, Cape Town has a Mediterranean climate. In summer it is usually pleasantly warm. The hottest days are often cooled by the Cape Doctor, the famous South-Easter, which keeps the city free of pollution.</p>
+                    <p>It seldom rains in summer, and only briefly when it does. The winters are cool and wet, but the temperature hardly ever falls below 10° C. The water temperatures in the Atlantic are low, due to the above-mentioned Benguela current, but east of the city the influence of the Indian Ocean is noticeable, and the beaches and seaside places on that side of the Cape Peninsula are more populated. The beaches in the west do have the advantage of protection from the South-Easter by the Table Mountain massif.</p>
+                <h3>Important Info</h3>
+                    <p>Important Contact numbers:</p>
+                    <ul>
+                    	<li>Arrivals & Departures 086 727 7888</li>
+						<li>Cape Town International Airport 021 937 1200</li>
+						<li>Emergency SAPS 10111</li>
+						<li>Ambulance 10177</li>
+						<li>Emergency Table Mountain 0861 106 417</li>
+						<li>Fire - Residential & Mountain 021 535 1100</li>
+						<li>Mountain Rescue 021 948 9900</li>
+						<li>Sea Rescue - NSRI 021 449 3500</li>
+						<li>Tourist Assistance - Police 021 421 5115</li>
+                     </ul>
+                      <p>The biggest banks are:</p>
+                    <ul>
+						<li>ABSA</li>
+						<li>FNB (First National Bank)</li>
+						<li>Nedbank</li>
+						<li>Standard Bank</li>
+						<li>Wesbank</li>
+						<li>NBS</li>
+                     </ul>
+                     <p>The usual opening hours for banks are: Monday to Friday 9AM-3.30PM Saturday 9AM-11AM</p>
+				<p>Shops and Malls:</p>
+				<p>Most shopping malls are open till about 7PM. However, a lot of shops are open till 9PM or longer. The most well-known shops in South Africa are Pick and Pay, Checkers, Spar and Woolworths. </p>
+            <h3>What to see</h3>
+            	<p>Arderne Gardens</p>
+				<p>The Garden is situated on Main Road, Claremont and has one of the richest collections of exotic trees and shrubs in South Africa. The Arderne Gardens, with its Japanese Garden, shady glades and romantic nooks has made it one of the favourite spots in Cape Town for wedding photographs. (Thomas Road, Kenilworth, Cape Town)</p>
+				<p>Bo-Kaap</p>
+				<p>Bo-Kaap, or the old Malay Quarter, was declared an exclusive residential area for the Muslim Cape Malays under the Group Areas Act of 1950 during the Apartheid years, forcing people of other religions and ethnicity to leave and today is still closely associated with the Muslim community. The houses have been restored and colourfully painted, and the steep cobbled streets, mosques and minarets, and blend of Cape Dutch and Edwardian architecture makes it one of the most interesting historical and cultural areas of the city. The Bo-Kaap Museum on Wale Street documents the history of the Cape Malays (Tel: 021 424 3846, Website: www.bokaap.co.za)</p>
+			<h3>What to do</h3>
+            	<p>Abseiling</p>
+				<p>Abseiling off Table Mountain is an experience of adrenaline and achievement not to be missed. The world famous Table Mountain soars above Cape Town at 1000 metres above sea level.</p>
+				<p>Baboon Walks</p>
+				<p>These walks, where visitors are accompanied by a local zoologist enable people to observe two resident baboon troops in their natural environment. (Tours by appointment only: 021 783 2630, E-mail address: peninsulatourism@tourismcapetown.co.za )</p>
+ 			</div>
+            </div>
 
 	<!-- START Header -->
     		<div id="Header">
@@ -54,11 +109,13 @@
         
         <div id="Nav1">
             	<ul>
-                	<li><a href="#">View North America</a></li>
+                	<li><a class="modalbox" href="#inline">View guide for North America</a></li>
                     <li><a href="#">Discover all our destinations</a></li>
                     <li><a href="#">Browse all holiday offers</a></li>
                 </ul>
          </div>
+
+            
        <!-- Optional copy -->
        <div class="description">Lorem ipsum dolor sit amet, an adhuc timeam ullamcorper has, ut eum eius facete tibique. Sed temporibus concludaturque ad, vis solum lucilius id. Mei ne dicam latine numquam, ut vocent laoreet accusamus pri, detracto postulant vim in. Est ne accusamus dissentiet, duo et mutat illud mundi, ea pro suscipit postulant. Magna moderatius has eu.Eos ut noster aeterno, per ea semper deleniti molestie. At eum rebum zril scripserit. Ne eum erant eligendi, erat prodesset reprehendunt pri eu, perfecto salutandi conceptam eu duo. Ei omnes nusquam repudiare vix. Ea alia sensibus argumentum vel, officiis conceptam te mea, atqui lobortis contentiones eu mel.</div>
        <div id="Nav2">

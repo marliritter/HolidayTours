@@ -8,7 +8,7 @@
 	h1		{ font-size: 22px; color: #999; margin-bottom: 30px; padding: 0 0 10px 0; }
 	
 	#Content								{ width: 970px; padding: 20px; margin: auto; min-height: 500px; display: table;}
-	#Content .description					{ padding-bottom: 40px; font-size:13px; }
+	#Content .description					{ padding-bottom: 40px; font-size:13px;}
 	/* Search Panel - Hotel Selection - Scrolling Destinations - Skyscraper advert */
 	#Content #Row1 							{ width:auto; height:600px; marging-bottom: 20px; }
 	#Content #Row1 #SearchBrowsePanel		{ width:350px; height:340px; float:left;  }
@@ -383,4 +383,16 @@
 	.dealsscrollable .dealsitems {/* this cannot be too large */width:20000em;position:absolute;clear:both;}
 	.dealsitems div 					{float:left; width:970px;}
 
+	
+/* Resort Tabs Widget */
+	#resorttabswrapper 						{ width:970px; float: left; margin-bottom: 10px; }
+	#resorttabswrapper #resortpane 			{ width:970px; height:200px; margin-bottom: 10px; float: left; position: relative; z-index:1; border:1px solid #CCCCCC; overflow: scroll;}
+	#resorttabswrapper #resortcontent 		{ padding:20px;}
+	#resorttabswrapper #resortcontent #info { width:930px; height:200px; float:left; font-size: 12px;}
+
+
+/* Enquire now popup hide */	
+    #inline 					{ display: none; width: 400px; height: 400px;}	
+	#inline .Content_enquiry	{ background-image:url(../images/searchpanel/webenquiry_bg.png); background-repeat:no-repeat; background-position: top left; background-color: #F2F2F2; border: 1px solid #ccc; font-size: 14px; padding: 50px 15px; }
+	#inline .Content_guide		{ background-image:url(../images/searchpanel/guide_bg.png); background-repeat:no-repeat; background-position: top left; background-color: #F2F2F2; border: 1px solid #ccc; font-size: 14px; padding: 50px 15px; }
 	
