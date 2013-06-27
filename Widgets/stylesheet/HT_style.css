@@ -275,6 +275,7 @@
 	#Property_col2 .priceinfo a:hover			{ color:#00649F; }
 	#Property_col2 .price_description			{ color:#007AC5; font-size: 16px; margin:auto;}
 	#Property_col2 .price_description a			{ color:#007AC5; }
+	#Property_col2 .price_date					{ color:#007AC5; font-size: 14px; margin:auto;}
 	#Property_col2 .price_description .price	{ font-weight: bold; font-size: 22px; display: block}
 	#Property_col3								{ width: 280px; height: 220px; float: left; background-color:#CCCCCC;}
 	
