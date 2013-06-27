@@ -393,7 +393,8 @@
 
 
 /* Enquire now popup hide */	
-    #inline 					{ display: none; width: 400px; height: 400px;}	
-	#inline .Content_enquiry	{ background-image:url(../images/searchpanel/webenquiry_bg.png); background-repeat:no-repeat; background-position: top left; background-color: #F2F2F2; border: 1px solid #ccc; font-size: 14px; padding: 50px 15px; }
+    #inline 					{ display: none; width: 400px; height: 250px;}	
+	#inline .Content_enquiry	{ background-image:url(../images/searchpanel/webenquiry_bg.png); background-repeat:no-repeat; background-position: top left; background-color: #F2F2F2; border: 1px solid #ccc; font-size: 14px; padding: 50px 15px;}
+	#inline .Content_enquiry table { font-size:14px; }
 	#inline .Content_guide		{ background-image:url(../images/searchpanel/guide_bg.png); background-repeat:no-repeat; background-position: top left; background-color: #F2F2F2; border: 1px solid #ccc; font-size: 14px; padding: 50px 15px; }
 	
